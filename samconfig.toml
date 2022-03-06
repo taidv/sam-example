@@ -1,0 +1,11 @@
+version = 0.1
+
+[default.global.parameters]
+stack_name = "sam-example-stack"
+
+[test.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+parameter_overrides = "ENV=test"
+stack_name = "sam-example-test-stack"
+tags = "project=\"sam-example\" stage=\"test\""

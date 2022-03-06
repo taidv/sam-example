@@ -1,0 +1,9 @@
+{
+  "name": "shared-internal-modules",
+  "version": "1.0.0",
+  "description": "shared-internal-modules",
+  "license": "MIT",
+  "dependencies": {
+    "validator": "^13.7.0"
+  }
+}

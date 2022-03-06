@@ -1,0 +1,10 @@
+{
+  "name": "greeting",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "LOCAL=true node index.js"
+  },
+  "dependencies": {}
+}
