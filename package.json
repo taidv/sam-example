@@ -2,5 +2,23 @@
   "name": "sam-example",
   "version": "1.0.0",
   "description": "SAM example",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.2.6",
+    "prettier": "^2.5.1"
+  },
+  "lint-staged": {
+    "**/*.js": "eslint --cache --fix",
+    "**/*.{js,css,md}": "prettier --write"
+  }
 }

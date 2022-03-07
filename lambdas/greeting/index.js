@@ -1,4 +1,4 @@
-const isLocal = process.env.LOCAL === 'true';
+const isLocal = process.env.AWS_EXECUTION_ENV === undefined;
 const { eventParser, logger } = require(isLocal ? '../../layers/shared-internal-modules/index' : '/opt/nodejs/index');
 const { debug } = logger;
 

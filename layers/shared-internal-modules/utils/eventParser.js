@@ -1,6 +1,6 @@
 exports.parse = (event) => {
   const { body, path, httpMethod, queryStringParameters, pathParameters, stageVariables, headers, requestContext } =
-    event;
+    event || {};
 
   return {
     method: httpMethod,
